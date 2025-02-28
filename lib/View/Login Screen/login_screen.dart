@@ -94,13 +94,22 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Checkbox(
                       value: true,
                       onChanged: (value) {},
                       fillColor: WidgetStatePropertyAll(Colors.black),
                       checkColor: Colors.white,
+                    ),
+                    SizedBox(
+                      width: 0,
+                    ),
+                    Text(
+                      "Remember Me",
+                      style: TextStyle(),
+                    ),
+                    SizedBox(
+                      width: 110,
                     ),
                     Text(
                       "Forgot Password",
